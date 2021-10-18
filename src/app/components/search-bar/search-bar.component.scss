@@ -1,0 +1,62 @@
+.search{
+    &-container{
+        width: 100%;
+        height: 60px;
+        background-color: #6a8d6e;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed; //püsib ülemises ääres
+        top: 0; 
+        left: 0;
+        z-index: 4;
+    }
+     &-form{ //kogu otsinguvärgi laius kuvasuhtes.
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    } 
+
+    &-input{
+        margin-left: 10px;//kasti kaugus tekstist "siseta otsitav toode"
+        padding: 10px;//otsingukasti kõrgus
+        width: 300px; //otsingukasti laius
+        border-bottom-left-radius: 5px; //otsingukasti nurgad ümaraks
+        /*border-bottom-right-radius: 5px;//otsingukasti nurgad ümaraks*/
+        border-top-left-radius: 5px;//otsingukasti nurgad ümaraks
+        /*border-top-right-radius: 5px;//otsingukasti nurgad ümaraks*/
+        outline: none;
+        border: none;
+        background: lightgray;
+    }
+
+    &-button { //"otsi" nupp
+        /*margin-left: 10px;*/
+        border: none;
+        outline: none;
+        background: #3f51b5;
+        padding: 10px;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        border-top-right-radius: 5px; //otsi nupu parem ülemine nurk ümaraks
+        border-bottom-right-radius: 5px; //otsi nupu parem alumine nurk ümaraks
+        color: #fff;
+        font-weight: 70; //kirja "otsi" raskus
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        &:hover{ //otsingukasti välimus kui sellele liikuda - värvid vahetuvad, tekst siniseks ja taust valgeks.
+            color: #3f51b5;
+            background-color: #fff;
+            border: 1px solid #3f51b5;
+        }
+    }
+}
+
+.logo{ //teksti sisesta otsitav toode andmed, ülesehitus nagu peaks olema link, et peale minnes muutub kursor.
+    //võiks olla nagu ettevõtte logo, millele klikkides saab esilehele vms.
+    margin-left: 10px;
+    color: rgb(31, 24, 24);
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}

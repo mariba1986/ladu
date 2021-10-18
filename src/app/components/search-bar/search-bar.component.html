@@ -1,0 +1,9 @@
+
+<div class="search-container">
+    <form class="search-form" #form="ngForm"(ngSubmit)="onSubmit(form)">
+         <span class="logo" routerLink="/">LAOPROGRAMM </span> <!-- siin peaks teksti asemel logo olema, mis algusesse tagasi viib-->
+        <input class="search-input" name="search" ngModel placeholder="Otsing" />
+        <button class="search-button">Otsi</button>
+    </form>
+</div>
+
