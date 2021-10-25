@@ -14,6 +14,8 @@ component: HomeComponent,},
   path: '',
   component: DataTableComponent,
 }
+
+
 ];
 
 @NgModule({

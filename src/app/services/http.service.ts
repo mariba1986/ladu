@@ -15,14 +15,14 @@ export class HttpService {
   getItemList(
     ordering: string,
     search?: string
-  ): Observable<APIResponse<Item>> {
+  ): Observable<APIResponse<Id>> {
     let params = new HttpParams().set('ordering', ordering);
 
     if (search) {
 
       params = new HttpParams().set('ordering', ordering).set('search', search);
     }
-    return this.http.get<APIResponse<Item>>(`${env.BASE_URL}/items`, {
+    return this.http.get<APIResponse<Id>>(`${env.BASE_URL}/stock/`, {
       params: params,
     });
   }

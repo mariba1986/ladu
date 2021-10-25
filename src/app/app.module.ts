@@ -18,12 +18,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     HomeComponent,
     DataTableComponent
+  
   ],
   imports: [
     BrowserModule,
