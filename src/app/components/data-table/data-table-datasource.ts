@@ -15,12 +15,12 @@ export interface DataTableItem {
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DataTableItem[] = [
   {id: 1, name: 'Süstal 20ml', amount: 15, serial: 1254543},
-  {id: 2, name: 'Kanüül', amount: 50,serial: 153333},
-  {id: 3, name: 'Glükomeetri testribad', amount: 55,serial: 135823},
-  {id: 4, name: 'Põiekateetrid', amount: 15,serial: 1238844},
-  {id: 5, name: 'Kaitsekinnas', amount: 35,serial: 1234457},
-  {id: 6, name: 'Pintsetid', amount: 25,serial: 5514123},
-  {id: 7, name: 'Maskid', amount: 5,serial: 682123},
+  {id: 2, name: 'Kanüül', amount: 50, serial: 153333},
+  {id: 3, name: 'Glükomeetri testribad', amount: 55, serial: 135823},
+  {id: 4, name: 'Põiekateetrid', amount: 15, serial: 1238844},
+  {id: 5, name: 'Kaitsekinnas', amount: 35, serial: 1234457},
+  {id: 6, name: 'Pintsetid', amount: 25, serial: 5514123},
+  {id: 7, name: 'Maskid', amount: 5, serial: 682123},
  
 ];
 
@@ -90,6 +90,7 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
         case 'name': return compare(a.name, b.name, isAsc);
         case 'amount': return compare(+a.amount, +b.amount, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'serial': return compare(+a.serial, +b.serial, isAsc);
         default: return 0;
       }
     });
