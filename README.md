@@ -1,9 +1,10 @@
 # Ladu
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
-In order to run it, you need to install Angular by writing in npm install -g @angular/cli in your terminal. 
 
-If you run into an error of "An unhandled exception occurred: ENOENT: no such file or directory" you may need to run "npm install" in the folder you're in. 
+1. In order to run the project, install Angular by writing "npm install -g @angular/cli" in your terminal.
+2. Run "npm install" in the folder you're in.
+
 After that, the next step should work and open the current (front-end) status of our project.
 
 ## Development server
